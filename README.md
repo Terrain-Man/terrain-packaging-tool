@@ -266,12 +266,6 @@ docs/
 
 These files explain artifact schemas, database assumptions, and implementation details that are too detailed for the base README.
 
-The longer version of this README is preserved as:
-
-```text
-README_verbose.md
-```
-
 ---
 
 ## License and Data Sources
