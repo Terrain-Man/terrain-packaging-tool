@@ -72,14 +72,12 @@ terrain_tool_starter/
     .gitkeep
 
   docs/
-    README_verbose.md
-    comprehensive_description/
-      00_table_of_contents.md
-      01_intro_and_concepts.md
-      02_database_prep_and_schema_initialization.md
-      03_mode_explanations.md
-      04_appendix_a_database_table_plan.md
-      05_appendix_b_json_artifact_examples.md
+    00_table_of_contents.md
+    01_intro_and_concepts.md
+    02_database_prep_and_schema_initialization.md
+    03_mode_explanations.md
+    04_appendix_a_database_table_plan.md
+    05_appendix_b_json_artifact_examples.md
   outputs/
     .gitkeep
 ```
