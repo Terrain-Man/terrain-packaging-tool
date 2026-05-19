@@ -97,19 +97,19 @@ This workflow assumes:
 * Access to a project database, for example:
 
 ```text
-geog670_terrain_packaging_v1
+terrain_tool_db
 ```
 
 Recommended Python environment name:
 
 ```text
-geog670_terrain
+terrain_packaging tool
 ```
 
 Activate the environment before running the database preparation scripts or terrain tool:
 
 ```bash
-conda activate geog670_terrain
+conda activate terrain_packaging_tool
 ```
 
 ---
@@ -144,10 +144,12 @@ Pandas and GDAL-related libraries may also be used indirectly through GeoPandas,
 
 ## Quick Start
 
-From the project root:
+This project was developed in a local Python environment using Anaconda/conda. Other Python environment managers may work, but the documented setup assumes Anaconda or Miniconda.
+
+From the project root, activate the project environment if using conda:
 
 ```bash
-conda activate geog670_terrain
+conda activate terrain_packaging_tool
 ```
 
 Copy the example configuration files:
@@ -220,9 +222,9 @@ Example:
 database:
   host: "localhost"
   port: 5432
-  name: "geog670_terrain_packaging_v1"
-  user: "postgres"
-  password_env_var: "GEOG670_DB_PASSWORD"
+  name: "terrain_tool_db"
+  user: "user"
+  password_env_var: "TERRAIN_TOOL_PASSWORD"
 ```
 
 ---
