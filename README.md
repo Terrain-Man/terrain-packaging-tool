@@ -1,4 +1,4 @@
-# GEOG670 Terrain Tool Starter
+# Terrain Packaging Tool Starter
 
 This repository contains a PostgreSQL/PostGIS-centered terrain packaging workflow for converting georeferenced elevation rasters into engine-ready terrain-package artifacts.
 
