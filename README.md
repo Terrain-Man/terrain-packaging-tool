@@ -161,79 +161,7 @@ config/tool_config.yaml.example → config/tool_config.yaml
 
 Edit the copied YAML files for the local machine.
 
-Then run:
-
-```bash
-python db/db_prepare.py
-python db/db_check.py
-python terrain_tool.py
-```
-
-A typical first workflow inside `terrain_tool.py` is:
-
-```text
-1. Mode 1: Register Source Raster Dataset
-2. Mode 2: Register AOI Definition
-3. Mode 3: Terrain Package Operations
-   1. Create tile plan only
-```
-
-The setup order follows your verbose README’s recommended first run sequence.
-
----
-
-## Configuration
-
-Do not edit the `.example` files as live configuration.
-
-Instead, copy:
-
-```text
-config/database_config.yaml.example
-```
-
-to:
-
-```text
-config/database_config.yaml
-```
-
-and copy:
-
-```text
-config/tool_config.yaml.example
-```
-
-to:
-
-```text
-config/tool_config.yaml
-```
-
-Then edit the copied files.
-
-The `.example` files should remain reusable templates.
-
-Database passwords should not be committed to the repository. The preferred pattern is to store the password in a local environment variable and reference that variable from the YAML configuration.
-
-Example:
-
-```yaml
-database:
-  host: "localhost"
-  port: 5432
-  name: "terrain_tool_db"
-  user: "user"
-  password_env_var: "TERRAIN_TOOL_PASSWORD"
-```
-
----
-
-## Database Preparation
-
-Before running Modes 1–3, the PostgreSQL/PostGIS database schema must be created.
-
-The database itself should already exist. Then run:
+Then, starting with an empty database, run:
 
 ```bash
 python db/db_prepare.py
@@ -254,8 +182,6 @@ python db/db_check.py
 ```
 
 If the check fails, correct the reported issue before running `terrain_tool.py`.
-
-Your verbose README already separates database preparation from Modes 1–3 and identifies `db/schema.sql` as the authoritative schema definition.
 
 ---
 
