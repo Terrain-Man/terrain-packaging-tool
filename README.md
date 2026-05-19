@@ -347,25 +347,8 @@ README_verbose.md
 
 ---
 
-## Data and Safety Notes
-
-This repository should not include:
-
-* local machine paths
-* database passwords
-* API keys or tokens
-* large source rasters
-* generated RAW tiles
-* private or licensed source datasets unless redistribution is explicitly allowed
-
-Source rasters can remain in external GIS data folders and be registered by Mode 1 using stored path references.
-
-Use `.gitignore` to exclude local configuration files, generated outputs, logs, caches, and large GIS data files.
-
----
-
 ## License and Data Sources
 
-Code licensing and data redistribution terms should be handled separately.
+Code licensing and data redistribution terms are handled separately.
 
 Large elevation datasets are not included in this starter repository. Users are responsible for obtaining any source raster data under appropriate license terms.
