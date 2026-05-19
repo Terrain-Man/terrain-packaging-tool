@@ -1,0 +1,59 @@
+# Local configuration files
+config/*.yaml
+!config/*.yaml.example
+
+# Environment variables / secrets
+.env
+*.env
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs and generated reports
+logs/**
+!logs/
+!logs/.gitkeep
+*.log
+
+# Generated outputs
+outputs/**
+!outputs/
+!outputs/.gitkeep
+
+# Large GIS / terrain source and output files
+*.tif
+*.tiff
+*.asc
+*.vrt
+*.raw
+*.gpkg
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.geojson
+*.kml
+
+# Optional data folders, if present
+data/**
+rasters/**
+terrain_packages/**
+raw_tiles/**
+
+# Keep placeholder files if used
+!data/.gitkeep
+!rasters/.gitkeep
+!terrain_packages/.gitkeep
+!raw_tiles/.gitkeep
+
+# OS/editor clutter
+Thumbs.db
+.DS_Store
+.vscode/
+.idea/
+
+*.csv

@@ -1,0 +1,13 @@
+database:
+  host: "localhost"
+  port: 5432
+  name: "terrain_tool"
+  user: "user"
+  password_env_var: "TERRAIN_TOOL_DB_PASSWORD"
+
+schema:
+  name: "public"
+
+connection:
+  connect_timeout_seconds: 10
+  application_name: "terrain_tool"

@@ -1,0 +1,62 @@
+paths:
+  default_output_root: "<source_path>/terrain_tool/terrain_packages"
+  schema_sql_path: "db/schema.sql"
+  logs_root: "logs"
+  docs_root: "docs"
+
+logging:
+  level: "INFO"
+  verbose: false
+
+defaults:
+  path_storage_mode: "root_plus_relative"
+  manifest_schema_version: "0.4.0"
+  tile_catalog_schema_version: "0.4.0"
+  expected_database_schema_version: "0.1.1"
+
+mode1:
+  default_source_storage_mode_single_file: "external_file"
+  default_source_storage_mode_multi_file: "external_files"
+  default_path_storage_mode_for_csv_list: "root_plus_relative"
+  reject_mismatched_source_crs_by_default: true
+
+mode2:
+  preserve_original_geometry_by_default: true
+  reject_unknown_crs_by_default: true
+
+mode3:
+  default_heightmap_resolution: 1025
+  default_target_sample_spacing_meters: 1.0
+
+  default_tile_size_strategy: "derive_from_heightmap_resolution_and_target_sample_spacing"
+  default_tile_size_meters: null
+
+  default_edge_policy: "ceil_to_full_tiles"
+
+  default_grid_anchor_policy: "snap_to_source_raster_grid"
+  default_snap_reference: "source_raster_cell_edges"
+  default_snap_min_direction: "floor_to_southwest"
+  default_snap_max_direction: "ceil_to_northeast"
+  default_aoi_enclosure_policy: "fully_enclose_aoi"
+
+  allow_unsnapped_grid_by_default: false
+  require_confirmation_for_unsnapped_grid: true
+  warn_when_grid_not_snapped_to_source: true
+
+  warn_when_target_spacing_exceeds_source_cell_size: true
+  note_when_target_spacing_is_finer_than_source_cell_size: true
+
+  default_raw_bit_depth: 16
+  default_raw_data_type: "uint16"
+  default_raw_byte_order: "little_endian"
+
+  default_generate_manifest_rule: true
+  default_generate_tile_catalog: false
+  default_store_derived_rasters_in_postgis: false
+  default_export_tile_grid_geopackage: true
+
+runtime_profiles:
+  default_profile_id: "unity_arcgis_maps_sdk"
+  available_profile_ids:
+    - "unity_arcgis_maps_sdk"
+    - "unity_cesium"
