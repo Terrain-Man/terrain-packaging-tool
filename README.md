@@ -1,6 +1,6 @@
-# Terrain Packaging Tool Starter
+# Terrain Packaging Tool Initial Implementation
 
-This repository contains a PostgreSQL/PostGIS-centered terrain packaging workflow for converting georeferenced elevation rasters into engine-ready terrain-package artifacts.
+This repository contains the first working implementation of a PostgreSQL/PostGIS-centered terrain packaging workflow for converting georeferenced elevation rasters into engine-ready terrain-package artifacts.
 
 The project is organized around one main Python tool:
 
@@ -80,7 +80,7 @@ terrain_tool_starter/
     .gitkeep
 ```
 
-The `logs/` and `outputs/` folders may initially contain only `.gitkeep` files. Actual logs and terrain-package artifacts are created when the tool runs.
+The `logs/` and `outputs/` folders may initially contain only `.gitkeep` files. Actual logs and terrain-package artifacts are generated when the tool runs and are excluded from version control.
 
 ---
 
