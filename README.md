@@ -50,8 +50,6 @@ It does not yet create engine-ready heightmap files.
 
 ## Repository Structure
 
-Expected starter structure:
-
 ```text
 terrain_packaging_tool/
   README.md
