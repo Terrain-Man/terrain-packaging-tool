@@ -1,8 +1,8 @@
-# Terrain Packaging Tool Initial Implementation
+# Terrain Packaging Tool - Initial Implementation
 
 This repository contains a PostgreSQL/PostGIS-centered terrain packaging workflow for converting georeferenced elevation rasters into engine-ready terrain-package artifacts.
 
-The project is organized around one main Python tool:
+The project is organized around one main Python script:
 
 ```text
 terrain_tool.py
