@@ -46,8 +46,6 @@ Mode 3A creates the approved real-world tile footprint plan.
 It does not yet create engine-ready heightmap files.
 ```
 
-Additional documentation and explanation 
-
 ---
 
 ## Repository Structure
@@ -104,7 +102,7 @@ terrain_tool_db
 Recommended Python environment name:
 
 ```text
-terrain_packaging tool
+terrain_packaging_tool
 ```
 
 Activate the environment before running the database preparation scripts or terrain tool:
