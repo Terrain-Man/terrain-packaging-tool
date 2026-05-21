@@ -1,6 +1,6 @@
 # Terrain Packaging Tool Initial Implementation
 
-This repository contains the first working implementation of a PostgreSQL/PostGIS-centered terrain packaging workflow for converting georeferenced elevation rasters into engine-ready terrain-package artifacts.
+This repository contains a PostgreSQL/PostGIS-centered terrain packaging workflow for converting georeferenced elevation rasters into engine-ready terrain-package artifacts.
 
 The project is organized around one main Python tool:
 
@@ -25,7 +25,7 @@ At the current stage, **Mode 3A: Create tile plan only** is implemented. Later M
 
 ## Project Status
 
-This is a starter / vertical-slice implementation of a terrain-packaging workflow for GIS-to-engine terrain production.
+This is a first working implementation of a terrain-packaging workflow for GIS-to-engine terrain production.
 
 The current implementation can:
 
@@ -53,7 +53,7 @@ It does not yet create engine-ready heightmap files.
 Expected starter structure:
 
 ```text
-terrain_tool_starter/
+terrain_packaging_tool/
   README.md
   terrain_tool.py
 
@@ -268,6 +268,6 @@ These files explain artifact schemas, database assumptions, and implementation d
 
 ## License and Data Sources
 
-Code licensing and data redistribution terms are handled separately.
+No third-party elevation datasets are included in this repository. Users are responsible for obtaining source raster data under appropriate license terms.
 
-Large elevation datasets are not included in this starter repository. Users are responsible for obtaining any source raster data under appropriate license terms.
+Code licensing is not yet finalized. Until a license is added, this repository is provided for review and demonstration only.
