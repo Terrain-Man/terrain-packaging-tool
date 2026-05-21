@@ -51,7 +51,7 @@ It does not yet create engine-ready heightmap files.
 ## Repository Structure
 
 ```text
-terrain_packaging_tool/
+terrain-packaging-tool/
   README.md
   terrain_tool.py
 
